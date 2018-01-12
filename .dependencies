@@ -12,7 +12,7 @@ git:
         path: user/plugins/markdown-notices
         branch: master
     antimatter:
-        url: https://github.com/getgrav/grav-theme-antimatter
+        url: https://github.com/rkl-/grav-theme-antimatter.git
         path: user/themes/antimatter
         branch: master
 links:

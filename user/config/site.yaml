@@ -1,7 +1,24 @@
-title: Grav
+title: blog.rkl.io
+default_lang: en
 author:
-  name: Joe Bloggs
-  email: 'joe@test.com'
+  name: 'Romano Kleinwaechter'
+  email: romano.kleinwaechter@gmail.com
+taxonomies:
+  - category
+  - tag
+  - month
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
-
+  description: 'Digital pioneers blog from Romano Kleinwaechter, a full-time software engineer from Berlin in Germany. We talk about software developer related topics.'
+  keywords: 'software, developing, crypto, currencies, hacking, security, web, digital, romano, kleinwaechter'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+redirects:
+  /changelog: /blog/the-urban-jungle
+routes:
+  /something/else: /blog/focus-and-blur
+  '/another/one/(.*)': /blog/$1
+blog:
+  route: ''
