@@ -67,6 +67,10 @@ git:
         url: https://github.com/getgrav/grav-plugin-taxonomylist.git
         path: user/plugins/taxonomylist
         branch: master
+    cookiesnotice:
+        url: https://github.com/kwachu96/grav-plugin-cookies-notice
+        path: user/plugins/cookiesnotice
+        branch: master
 
 links:
     problems:
@@ -136,4 +140,8 @@ links:
     taxonomylist:
         src: grav-plugin-taxonomylist
         path: user/plugins/taxonomylist
+        scm: github
+    cookiesnotice:
+        src: grav-plugin-cookies-notice
+        path: user/plugins/cookiesnotice
         scm: github

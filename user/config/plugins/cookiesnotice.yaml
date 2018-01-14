@@ -1,0 +1,7 @@
+enabled: true
+jqcookie: true
+possition: top
+url: /cookie-policy
+customcss: false
+urlcss: 'http://example.com/assets/css/style.css'
+position: top
