@@ -1,0 +1,3 @@
+[submodule "user/themes/antimatter"]
+	path = user/themes/antimatter
+	url = git@github.com:rkl-/grav-theme-antimatter.git
