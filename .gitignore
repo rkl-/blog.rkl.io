@@ -2,6 +2,7 @@
 .composer
 vendor/*
 !*/vendor/*
+.gitkeep
 
 # Sass
 .sass-cache
