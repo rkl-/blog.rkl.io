@@ -154,8 +154,6 @@ auth.set_access_token(keys['access_token'], keys['access_token_secret'])
 twitterAPI = tweepy.API(auth)
 ```
 
-**SETUP HERE**
-
 As you may noticed here, we use `import
 tweepy`. [Tweepy](http://www.tweepy.org/) is a simple
 python package which we can use to easily access the [twitter
