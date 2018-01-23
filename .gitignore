@@ -44,3 +44,7 @@ tests/_output/*
 tests/_support/_generated/*
 tests/cache/*
 tests/error.log
+
+# Google tag manager
+user/config/plugins/google-tag-manager.yaml
+
