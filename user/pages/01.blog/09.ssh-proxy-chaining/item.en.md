@@ -92,7 +92,33 @@ If we do now a `ssh my-private-host-02`, we automatically login to
 This setup is usefull, if our public jumphost can not talk to
 `my-private-host-02`, but `my-private-host-01` can.
 
-Of course, in this case, `my-private-host-01` needs also the netcat package installed.
+Of course, in this case, `my-private-host-01` needs also the netcat
+package installed.
+
+`ProxyCommand` is a good choice if you must also deal with older
+clients. For more modern ones, you can also use the `ProxyJump`
+directive. The big benefit here is, that you don't need the legacy
+approach with netcat to forward the SSH connection. If you use
+`ProxyJump`, ssh is doing the forward native.
+
+A simple one-liner is this: `ssh -J [user]@[my-public-host]:[port]
+[user]@[my-private-host]:[port]`.  Multiple jumphosts are comma
+separated. For a more cleaner and maintenance friendly solution, I still
+recommend to place this inside your `~/.ssh/config` file.
+
+```
+Host my-public-host
+	HostName [what ever]
+
+Host my-private-host
+	HostName [what ever]
+	ProxyJump my-public-host
+```
+
+In this example, `my-public-host` is the gateway to reach
+`my-private-host`.  As you can see, this setup is much cleaner and
+requires less instructions. Whenever it's possible, you should use
+`JumpProxy` instead of `ProxyCommand`.
 
 ##### Use SSH agent forward
 I strongly recommend, that you also place your local pubkey on all
